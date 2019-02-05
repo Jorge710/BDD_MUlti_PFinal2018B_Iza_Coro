@@ -1,0 +1,8 @@
+SUBIR ARCHIVOS  DE JSON A COUCHDB MEDIANTE EL CURL
+
+nota: se debe de colocar antes del[--codigo json--]
+
+{"docs":
+	******codigo json*****
+}
+curl -d @"C:\Users\usuario\Desktop\pulsopolitico_couch.json" -H "Content-type: application/json" -X POST http://127.0.0.1:5984/pulso_politico_couch/_bulk_docs

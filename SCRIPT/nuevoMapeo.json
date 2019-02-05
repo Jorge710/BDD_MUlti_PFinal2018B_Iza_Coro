@@ -1,0 +1,47 @@
+{
+ "mappings": {
+      "test-type": {
+        "properties": {
+          "author": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "date": {
+            "type": "date"
+          },
+          "location": {
+            "type": "geo_point"
+          },
+          "message": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "polarity": {
+            "type": "float"
+          },
+          "sentiment": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "subjectivity": {
+            "type": "float"
+          }
+        }
+      }
+    }
+  }
